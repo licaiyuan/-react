@@ -1,0 +1,60 @@
+.srk {
+  width: 200px !important;
+}
+
+@mixin flexa($direction: row, $justcontent: flex-start) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: center;
+  justify-content: $justcontent;
+  flex-wrap: wrap;
+}
+
+@each $var in h, s {
+  .searchxx#{$var} {
+    @if $var==h {
+      @include flexa;
+    } @else {
+      @include flexa(column, flex-start);
+    }
+
+    border-radius: 18px;
+    // height: 204px;
+    background: white;
+    padding: 10px;
+    .yh {
+      @include flexa;
+      margin: 10px;
+      .p {
+        height: 10px;
+      }
+    }
+  }
+}
+.kckztbf {
+  background: white;
+  margin-top: 18px;
+  padding: 10px;
+  border-radius: 18px;
+  .kckxbtyh {
+    @include flexa(row, space-between);
+    .anjg {
+      background: white !important;
+      color: rgba(45, 105, 179, 1) !important;
+      border: 1px solid rgba(45, 105, 179, 1) !important;
+    }
+    .tbwzyh {
+      @include flexa;
+      .tbwzyhlmd {
+        @include flexa;
+        cursor: pointer;
+        margin-left: 10px;
+      }
+    }
+    .anjg2 {
+      background: rgba(45, 105, 179, 1) !important;
+      color: white !important;
+      border: 1px solid rgba(45, 105, 179, 1) !important;
+    }
+  }
+}

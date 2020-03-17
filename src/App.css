@@ -1,0 +1,12 @@
+.App,
+.ant-layout {
+  /* text-align: center; */
+  height: 100%;
+}
+.ant-layout-header {
+  background: none !important;
+  padding: 0 !important;
+}
+.ant-layout-sider {
+  width: 300px !important;
+}

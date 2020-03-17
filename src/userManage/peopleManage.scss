@@ -1,0 +1,57 @@
+.rqtitle {
+  border-bottom: solid 1px rgba(232, 234, 236, 1);
+  font-size: 17px;
+  font-weight: 700;
+  padding-bottom: 10px;
+  width: 100%;
+}
+@mixin flexa($direction: row, $justcontent: flex-start) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: center;
+  justify-content: $justcontent;
+  flex-wrap: wrap;
+}
+.content {
+  background: #f0f2f5;
+  padding: 20px;
+  @include flexa(row, flex-start);
+  align-items: flex-start;
+}
+.anjg {
+  background: white !important;
+  color: rgba(45, 105, 179, 1) !important;
+  border: 1px solid rgba(45, 105, 179, 1) !important;
+}
+
+.anjg2 {
+  background: rgba(45, 105, 179, 1) !important;
+  color: white !important;
+  border: 1px solid rgba(45, 105, 179, 1) !important;
+}
+.xxyh {
+  @include flexa;
+  .search {
+    width: 300px;
+    margin-left: 20px;
+  }
+}
+.dxxyh {
+  @include flexa(row, space-between);
+  width: 100%;
+}
+.xzrq {
+  @include flexa;
+}
+.szpl {
+  @include flexa(column, flex-start);
+  background: white;
+  padding: 20px;
+  width: 70%;
+  margin-left: 58px;
+}
+.ant-tree {
+  padding: 20px;
+  height: 800px;
+  overflow-y: auto;
+}
